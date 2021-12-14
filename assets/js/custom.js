@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   //뒤로가기
-  $("#pf_more button.back").click(function(){
+  $("#pf_info button.back").click(function(){
     history.back();
   });
 

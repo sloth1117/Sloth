@@ -24,7 +24,7 @@ $(document).ready(function(){
       easing: 'swing',
       duration: 6000
     }
-    );
+  );
 
     $('.cl70').animateNumber( 
       {
@@ -34,7 +34,19 @@ $(document).ready(function(){
         easing: 'swing',
         duration: 5000
       }
-      );
+    );
 
+    
+    //스와이퍼
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 
 });

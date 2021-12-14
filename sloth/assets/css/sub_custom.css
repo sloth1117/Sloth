@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 스와이퍼 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 상세페이지 */
+
+html, body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+#pf_info .pf_go{
+  border-bottom: 0;
+}
+#pf_more .imgBox{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+#pf_more .imgBox img{
+  width: 100%;
+}
+
+.pf_info{margin-top: 30px;}
+
+#pf_info .pf_info li strong{
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px;
+  padding-right: 15px;
+  position: relative;
+  color: #2B484E;
+  width: 135px;
+}
+.pf_info li strong::after{
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: #A8D7CD;
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+}
+
+@media (min-width:1681px){
+  #pf_info .pf_info li strong{
+    font-size: 20px;
+  }
+}

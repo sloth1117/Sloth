@@ -49,4 +49,19 @@ $(document).ready(function(){
       },
     });
 
+    //goTop
+    $(".goTop").click(function(){
+      $("html, body").animate({scrollTop:0},1000);
+    });
+
+    $(document).scroll(function(){
+      aa = $(document).scrollTop();
+      $(".goTop").hide();
+      if(aa > 500) {
+        $(".goTop").fadeIn().show();
+      }else {
+        $(".goTop").fadeOut();
+      }
+    });
+
 });

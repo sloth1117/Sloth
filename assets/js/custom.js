@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
   //뒤로가기
-  $("#pf_info button.back").click(function(){
+  $("#pf_info .back").click(function(){
     history.back();
   });
+
 
   //포트폴리오 작업물 마우스오버
   $(".work > li").mouseover(function(){
@@ -26,19 +27,6 @@ $(document).ready(function(){
     {easing: "swing", duration: 5000}
     );
 
-  
-  
-  //스와이퍼
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
   //goTop
   $(".goTop").click(function(){

@@ -44,14 +44,6 @@ html, body{
 #pf_info .pf_go{
   border-bottom: 0;
 }
-#pf_more .imgBox{
-  width: 100%;
-  overflow: hidden;
-  margin-top: 100px;
-}
-#pf_more .imgBox img{
-  width: 100%;
-}
 
 .pf_info{margin-top: 30px;}
 
@@ -73,6 +65,63 @@ html, body{
   position: absolute;
   top: 50%; right: 0;
   transform: translateY(-50%);
+}
+.pf_info li.colors{
+  position: relative;
+}
+.pf_info .cos{
+  position: absolute;
+  top: 2px; left: 140px;
+}
+.pf_info .cos li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A8D7CD;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* page color */
+.colors .cos .p_cos1{background-color: #33546d;}
+.colors .cos .p_cos2{background-color: #7fa7b8;}
+.colors .cos .p_cos3{background-color: #f1485b;}
+.colors .cos .p_cos4{background-color: #f7efed;}
+
+/* veryvery color */
+.colors .cos .v_cos1{background-color: #f9afc0;}
+.colors .cos .v_cos2{background-color: #ec5a5b;}
+.colors .cos .v_cos3{background-color: #c3d0eb;}
+.colors .cos .v_cos4{background-color: #afa3cc;}
+
+/* my웨딩 color */
+.colors .cos .m_cos1{background-color: #88983D;}
+.colors .cos .m_cos2{background-color: #628C74;}
+.colors .cos .m_cos3{background-color: #FF931E;}
+
+/*  color */
+.colors .cos .k_cos1{background-color: #FAE1E1;}
+.colors .cos .k_cos2{background-color: #C3D0EB;}
+.colors .cos .k_cos3{background-color: #ED8E8E;}
+.colors .cos .k_cos4{background-color: #98B6EA;}
+
+/*  color */
+.colors .cos .g_cos1{background-color: #FF931E;}
+.colors .cos .g_cos2{background-color: #3FA9F5;}
+.colors .cos .g_cos3{background-color: #FFAC6B;}
+
+/*  color */
+.colors .cos .w_cos1{background-color: #FA89A4;}
+.colors .cos .w_cos2{background-color: #FE5D82;}
+.colors .cos .w_cos3{background-color: #FFFFFF; border: 1px solid #aaa;}
+
+
+#pf_more .imgBox{
+  width: 100%;
+  overflow: hidden;
+}
+#pf_more .imgBox img{
+  width: 100%;
 }
 
 @media (min-width:1681px){

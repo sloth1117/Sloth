@@ -17,53 +17,41 @@ $(document).ready(function(){
 
   //스킬 숫자카운트
   $(".cl80").animateNumber( 
-    {
-      number: 80,
-    },
-    {
-      easing: "swing",
-      duration: 6000
-    }
+    {number: 80,},
+    {easing: "swing", duration: 6000}
   );
-
-    $(".cl70").animateNumber( 
-      {
-        number: 70,
-      },
-      {
-        easing: "swing",
-        duration: 5000
-      }
+  
+  $(".cl70").animateNumber( 
+    {number: 70,},
+    {easing: "swing", duration: 5000}
     );
 
   
   
+  //스와이퍼
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
-    
-    //스와이퍼
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+  //goTop
+  $(".goTop").click(function(){
+    $("html, body").animate({scrollTop:0},1000);
+  });
 
-    //goTop
-    $(".goTop").click(function(){
-      $("html, body").animate({scrollTop:0},1000);
-    });
-
-    $(document).scroll(function(){
-      aa = $(document).scrollTop();
-      if(aa > 500) {
-        $(".goTop").fadeIn();
-      }else {
-        $(".goTop").fadeOut();
-      }
-    });
+  $(document).scroll(function(){
+    aa = $(document).scrollTop();
+    if(aa > 500) {
+      $(".goTop").fadeIn();
+    }else {
+      $(".goTop").fadeOut();
+    }
+  });
 
 });

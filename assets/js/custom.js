@@ -16,25 +16,28 @@ $(document).ready(function(){
 
 
   //스킬 숫자카운트
-  $('.cl80').animateNumber( 
+  $(".cl80").animateNumber( 
     {
       number: 80,
     },
     {
-      easing: 'swing',
+      easing: "swing",
       duration: 6000
     }
   );
 
-    $('.cl70').animateNumber( 
+    $(".cl70").animateNumber( 
       {
         number: 70,
       },
       {
-        easing: 'swing',
+        easing: "swing",
         duration: 5000
       }
     );
+
+  
+  
 
     
     //스와이퍼
@@ -56,9 +59,8 @@ $(document).ready(function(){
 
     $(document).scroll(function(){
       aa = $(document).scrollTop();
-      $(".goTop").hide();
       if(aa > 500) {
-        $(".goTop").fadeIn().show();
+        $(".goTop").fadeIn();
       }else {
         $(".goTop").fadeOut();
       }

@@ -127,6 +127,8 @@ footer{
   line-height: 55px;
   transition: all 0.3s;
   font-size: 0.8em;
+  min-width: 55px;
+  padding: 0;
 }
 .goTop:hover{
   background-color: rgba(55,115,116,1);
@@ -203,7 +205,7 @@ footer{
     justify-content: space-around;
   }
 
-  .goTop{display: none;}
+  /* .goTop{display: none;} */
   
 
 }

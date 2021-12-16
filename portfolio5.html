@@ -9,6 +9,7 @@
 		<title>Sloth by Ran </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/custom.css">
@@ -69,8 +70,42 @@
 
 							<!-- portfolio detail -->
 							<section id="pf_more" class="main">
-								<div class="imgBox">
-                  <img src="images/sub_portfolio/cardnews_game.jpg" alt="포트폴리오 이미지">
+								<div class="cardswiper">
+                  <!-- Swiper -->
+									<div class="swiper mySwiper_card">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide cardS">
+												<div><img src="images/sub_portfolio/card01.jpg" alt=""></div>
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card02.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card03.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card04.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card05.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card06.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card07.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card08.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="images/sub_portfolio/card09.jpg" alt="">
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
                 </div>
 							</section>
 					</div>
@@ -106,13 +141,25 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/swiper-bundle.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/jquery.bpopup.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/custom.js"></script>
+			<script>
+				var swiper1 = new Swiper(".mySwiper_card", {
+				pagination: {
+					el: ".mySwiper_card .swiper-pagination",
+					type: "fraction",
+				},
+				navigation: {
+					nextEl: ".cardswiper .swiper-button-next",
+					prevEl: ".cardswiper .swiper-button-prev",
+				},
+			});
+			</script>
 	</body>
 </html>

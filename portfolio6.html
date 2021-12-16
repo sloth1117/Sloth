@@ -9,6 +9,11 @@
 		<title>Sloth by Ran </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
+		<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/custom.css">
@@ -70,8 +75,15 @@
 							<!-- portfolio detail -->
 							<section id="pf_more" class="main">
 								<div class="imgBox">
-                  <img src="" alt="포트폴리오 이미지">
-                </div>
+									<ul>
+										<!-- <li><img src="images/sub_portfolio/w_banner01.jpg" alt=""></li>
+										<li><img src="images/sub_portfolio/w_banner02.jpg" alt=""></li> -->
+										<li><img src="images/sub_portfolio/w_banner03_PetMall.jpg" alt=""></li>
+										<!-- <li><img src="images/sub_portfolio/w_banner04.jpg" alt=""></li>
+										<li><img src="images/sub_portfolio/w_banner05.jpg" alt=""></li> -->
+										<li><img src="images/sub_portfolio/w_banner06_DailyFlower.jpg" alt=""></li>
+									</ul>
+								</div>
 							</section>
 					</div>
 
@@ -106,13 +118,21 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/swiper-bundle.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/jquery.bpopup.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/custom.js"></script>
+			<script>
+				//portfolio6_petmall
+				var swiper2 = new Swiper(".mySwiper_pm", {
+					pagination: {
+						el: ".mySwiper_pm .swiper-pagination",
+    			},
+  			});
+			</script>
 	</body>
 </html>

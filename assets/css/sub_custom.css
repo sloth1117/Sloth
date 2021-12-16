@@ -126,26 +126,31 @@ html, body{
 
 /* cardnews swiper */
 .mySwiper_card{
-  width: 600px;
+  width: 80%;
 }
 .cardswiper{
   position: relative;
 }
 .cardswiper .swiper-button-prev,
 .cardswiper .swiper-rtl .swiper-button-next{
-  left: 90px;
+  left: 0;
   color: #377374;
 }
 .cardswiper .swiper-button-next,
 .cardswiper .swiper-rtl .swiper-button-prev{
-  right: 90px;
+  right: 0;
   color: #377374;
 }
 .cardswiper .swiper-horizontal>.swiper-pagination-bullets, 
 .cardswiper .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .cardswiper .swiper-pagination-custom, 
 .cardswiper .swiper-pagination-fraction{
-  bottom: -5px;
+  width: 20%;
+  bottom: 0; right: 0; left: auto;
+  padding: 0 5px;
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
+  border-radius: 10px;
 }
 
 /* web banner */

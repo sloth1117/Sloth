@@ -126,7 +126,7 @@ html, body{
 
 /* cardnews swiper */
 .mySwiper_card{
-  width: 80%;
+  width: 100%;
 }
 .cardswiper{
   position: relative;
@@ -135,11 +135,13 @@ html, body{
 .cardswiper .swiper-rtl .swiper-button-next{
   left: 0;
   color: #377374;
+  display: none;
 }
 .cardswiper .swiper-button-next,
 .cardswiper .swiper-rtl .swiper-button-prev{
   right: 0;
   color: #377374;
+  display: none;
 }
 .cardswiper .swiper-horizontal>.swiper-pagination-bullets, 
 .cardswiper .swiper-pagination-bullets.swiper-pagination-horizontal, 
@@ -170,9 +172,32 @@ html, body{
   margin-bottom: 30px;
 }
 
+@media (min-width: 737px){
+  .mySwiper_card{
+    width: 80%;
+  }
+  .cardswiper{
+    position: relative;
+  }
+  .cardswiper .swiper-button-prev,
+  .cardswiper .swiper-rtl .swiper-button-next{
+    left: 0;
+    color: #377374;
+    display: block;
+  }
+  .cardswiper .swiper-button-next,
+  .cardswiper .swiper-rtl .swiper-button-prev{
+    right: 0;
+    color: #377374;
+    display: block;
+  }
+  :root{--swiper-navigation-size: 70px}
+}
 
-@media (min-width:1681px){
+
+@media (min-width: 1681px){
   #pf_info .pf_info li strong{
     font-size: 20px;
   }
 }
+

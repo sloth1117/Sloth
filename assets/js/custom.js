@@ -17,13 +17,13 @@ $(document).ready(function(){
 
 
   //스킬 숫자카운트
-  $(".cl80").animateNumber( 
-    {number: 80,},
+  $(".cl90").animateNumber( 
+    {number: 90,},
     {easing: "swing", duration: 6000}
   );
   
-  $(".cl70").animateNumber( 
-    {number: 70,},
+  $(".cl80").animateNumber( 
+    {number: 80,},
     {easing: "swing", duration: 5000}
     );
 

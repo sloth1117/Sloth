@@ -17,15 +17,14 @@ $(document).ready(function(){
 
 
   //스킬 숫자카운트
-  $(".cl90").animateNumber( 
+  $(".cl90").stop().animateNumber( 
     {number: 90,},
-    {easing: "swing", duration: 6000}
-  );
-  
-  $(".cl80").animateNumber( 
-    {number: 80,},
     {easing: "swing", duration: 5000}
-    );
+  );
+  $(".cl80").stop().animateNumber( 
+    {number: 80,},
+    {easing: "swing", duration: 4000}
+  );
 
 
   //goTop
